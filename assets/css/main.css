@@ -1,15 +1,4 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -17,7 +6,7 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors - The following color variables are used throughout the website.*/
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
@@ -87,57 +76,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -648,6 +586,7 @@ section,
   line-height: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -827,6 +766,10 @@ section,
 
 .portfolio .portfolio-content img {
   transition: 0.3s;
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .portfolio .portfolio-content .portfolio-info {
@@ -890,155 +833,6 @@ section,
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
-.services .service-item {
-  position: relative;
-}
-
-.services .service-item .icon {
-  background: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid var(--accent-color);
-  margin-right: 20px;
-}
-
-.services .service-item .icon i {
-  color: var(--contrast-color);
-  font-size: 24px;
-  line-height: 0;
-}
-
-.services .service-item:hover .icon {
-  background: var(--surface-color);
-}
-
-.services .service-item:hover .icon i {
-  color: var(--accent-color);
-}
-
-.services .service-item .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .service-item .title a {
-  color: var(--heading-color);
-}
-
-.services .service-item .title a:hover {
-  color: var(--accent-color);
-}
-
-.services .service-item .description {
-  line-height: 24px;
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  text-align: center;
-  min-height: 320px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 40%);
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 15px 15px;
-  padding: 20px;
-  background-color: var(--surface-color);
-  position: relative;
-  margin-bottom: 35px;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.testimonials .testimonial-item p::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 20px solid var(--surface-color);
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
-  position: absolute;
-  bottom: -20px;
-  left: calc(50% - 20px);
-}
-
-.testimonials .swiper-wrapper {
-  height: auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 40px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: var(--background-color);
-  opacity: 1;
-  border: 1px solid var(--accent-color);
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -1265,11 +1059,4 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }
