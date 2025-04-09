@@ -639,6 +639,13 @@ section,
   line-height: 0;
 }
 
+@media (max-width: 1199px) {
+  .about .img-fluid {
+    display: none !important;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Stats Section
