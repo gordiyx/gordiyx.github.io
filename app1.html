@@ -13,130 +13,6 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/img/favicon.png" rel="icon">
-  
-  <style>
-    /* Ensure all images in the carousel have the same size */
-    .carousel-item img {
-      width: 100%;  /* Ensures the image fills the available width */
-      height: 400px;  /* Fixes the height of the images */
-      object-fit: cover;  /* Ensures images maintain aspect ratio without distortion */
-    }
-
-    /* Modernizing text */
-    .portfolio-details-description h3 {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 15px;
-      color: #333;
-    }
-
-    .portfolio-details-description p,
-    .portfolio-details-description ul {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #555;
-    }
-
-    .portfolio-details-description ul li {
-      margin-bottom: 10px;
-    }
-
-    .portfolio-info ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    .portfolio-info ul li {
-      font-size: 1rem;
-      color: #333;
-    }
-
-    /* Section styling */
-    section#portfolio-details {
-      padding: 60px 0;
-    }
-
-    /* General Styling */
-.portfolio-details-description {
-  padding: 20px 40px;
-margin-bottom: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Title Styling */
-.section-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 0;
-  color: #333;
-  text-transform: uppercase;
-  position: relative;
-  bottom: -5px;
-margin-bottom: 10px;
-}
-
-.section-title::after {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 3px;
-  background-color: #007bff;
-  bottom: -5px;
-  left: 0;
-}
-
-.overview-text {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-/* Key Features Section */
-.key-features {
-  margin-bottom: 10px;
-}
-
-.features-list {
-  list-style: none;
-  padding: 0;
-margi: 0;
-}
-
-.feature-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.feature-item i {
-  color: #007bff;
-  font-size: 1.5rem;
-  margin-right: 10px;
-}
-
-.feature-item p {
-  font-size: 1.1rem;
-  color: #555;
-  margin: 0;
-  line-height: 1.6;
-}
-
-/* Technologies Section */
-.technologies-used ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.technologies-used li {
-  font-size: 1.1rem;
-  color: #555;
-}
-
-  </style>
 </head>
 
 <body class="index-page">
@@ -218,73 +94,41 @@ margi: 0;
 
           <!-- Right Column: Project Information -->
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web Development</li>
-                <li><strong>Client</strong>: Self-initiated Project</li>
-                <li><strong>Project Date</strong>: January 2025 - Present</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/gordiyx">Visit Project</a></li>
+            <div class="bg-white p-4 shadow rounded">
+              <h4>Project Information</h4>
+              <ul class="list-unstyled">
+                <li><strong>Category:</strong> Web Development</li>
+                <li><strong>Client:</strong> Self-initiated Project</li>
+                <li><strong>Date:</strong> January 2025 - Present</li>
+                <li><strong>URL:</strong> <a href="https://github.com/gordiyx">Visit Project</a></li>
               </ul>
             </div>
           </div>
         </div>
 
-        <!-- Project Description and Features Below -->
-<div class="row">
-  <div class="col-12">
-    <div class="portfolio-details-description">
-      <!-- Project Overview Section -->
-      <div class="project-overview">
-        <h3 class="section-title">Project Overview</h3>
-        <p class="overview-text">
-          This web application allows users to manage and track their personal book collections efficiently. It includes features like automated ISBN search, user authentication, and role-based access to cater to different types of users, ensuring secure and personalized use.
-        </p>
-      </div>
-
-      <!-- Key Features Section -->
-      <div class="key-features">
-        <h3 class="section-title">Key Features</h3>
-        <div class="features-list">
-          <div class="feature-item">
-            <i class="bi bi-check-circle-fill"></i>
-            <p>Automated ISBN search for quick and easy book tracking.</p>
-          </div>
-          <div class="feature-item">
-            <i class="bi bi-check-circle-fill"></i>
-            <p>Secure user authentication with login and registration functionality.</p>
-          </div>
-          <div class="feature-item">
-            <i class="bi bi-check-circle-fill"></i>
-            <p>Role-based access, allowing distinct permissions for admins and regular users.</p>
-          </div>
-          <div class="feature-item">
-            <i class="bi bi-check-circle-fill"></i>
-            <p>Responsive and adaptive design, optimized for any device.</p>
-          </div>
+        <div class="bg-white p-5 mt-4 shadow rounded">
+          <h3 class="text-uppercase fw-bold mb-3">Project Overview</h3>
+          <p>This web application allows users to manage and track their personal book collections efficiently. It includes features like automated ISBN search, user authentication, and role-based access for different user types.</p>
+    
+          <h4 class="text-uppercase fw-bold mt-4">Key Features</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Automated ISBN search for quick and easy book tracking.</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Secure login and registration functionality.</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Role-based access for different user permissions.</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Responsive design optimized for any device.</li>
+          </ul>
+    
+          <h4 class="text-uppercase fw-semibold mt-4">Technologies Used</h4>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-chevron-right text-primary"></i><strong>Frontend:</strong> React.js, Bootstrap, HTML5</li>
+            <li><i class="bi bi-chevron-right text-primary"></i><strong>Backend:</strong> Node.js, PHP, MySQL</li>
+            <li><i class="bi bi-chevron-right text-primary"></i><strong>API:</strong> RESTful API</li>
+            <li><i class="bi bi-chevron-right text-primary"></i><strong>Authentication:</strong> JWT (JSON Web Token)</li>
+          </ul>
         </div>
-      </div>
+</main>
 
-      <!-- Technologies Used Section -->
-      <div class="technologies-used">
-        <h3 class="section-title">Technologies Used</h3>
-        <ul class="technologies-list">
-          <li><strong>Frontend:</strong> React.js, Bootstrap, HTML5, CSS3</li>
-          <li><strong>Backend:</strong> Node.js, PHP, MySQL</li>
-          <li><strong>API:</strong> RESTful API</li>
-          <li><strong>Authentication:</strong> JSON Web Token (JWT)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End Project Description and Features Section -->
-
-
-
-  </main>
-
-  <!-- Footer Section -->
+<!-- Footer Section -->
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <div class="copyright text-center">
